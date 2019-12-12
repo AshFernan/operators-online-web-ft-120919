@@ -7,11 +7,10 @@ def unsafe?(speed)
   
 end  
 
-def not_safe? (speed = 60) 
+def not_safe? (speed) 
   
-speed < 79 ? "speed is over than 60" : "This is false"
-	
-speed < 35 ? "speed is less than 40" : "This is false"
+  speed < 40 || speed > 60 ? true : false
+  
 end
 
 	
